@@ -1,0 +1,24 @@
+# CS 6250 Fall 2018 - Good Firewall Policy Example
+# Rule number, srcmac, dstmac, srcip, dstip, srcport, dstport, protocol
+# Rule number is incremented each time - mostly for debug purposes
+# - for a rule element indicates that you don't need to match it.
+# Comments are on their own line
+
+
+1,-,-,-,10.0.0.6,-,1723,T
+2,-,-,-,10.0.0.1,-,22,B
+3,-,-,-,10.0.0.2,-,22,B
+4,-,-,-,10.0.0.3,-,22,B
+5,-,-,-,10.0.0.5,-,123,U
+6,-,-,-,10.0.0.5,-,53,U
+7,-,-,-,10.0.0.6,-,123,U
+8,-,-,-,10.0.0.6,-,53,U
+9,-,-,10.0.0.8,10.0.0.4,-,-,I
+10,-,-,10.0.0.9,10.0.0.4,-,-,I
+11,-,-,10.0.0.1,10.0.0.3,-,9950,T
+12,-,-,10.0.0.1,10.0.0.3,-,9951,T
+13,-,-,10.0.0.1,10.0.0.3,-,9952,T
+14,-,-,10.0.0.4,10.0.0.1,-,-,B
+15,-,-,10.0.0.4,10.0.0.2,-,-,B
+16,-,-,10.0.0.4,10.0.0.3,-,-,B
+
